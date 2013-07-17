@@ -90,6 +90,9 @@ define(['require'], function(require) {
             return String(n).replace(/\d/g, function(c, i, a) {
                 return i > 0 && c !== "." && (a.length - i) % 3 === 0 ? " " + c : c;
             });
+        },
+        toFixed: function(n) {
+            return Math.floor(n * 10000) * 0.01;
         }
     };
 
