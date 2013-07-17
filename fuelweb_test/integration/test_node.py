@@ -215,7 +215,5 @@ class TestNode(BaseNodeTestCase):
         self.assert_cluster_floating_list(
             nodes_dict['compute'][0], expected_ips)
 
-
-
 if __name__ == '__main__':
     unittest.main()
